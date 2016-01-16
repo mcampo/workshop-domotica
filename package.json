@@ -1,0 +1,10 @@
+{
+  "name": "workshop-domotica",
+  "description": "Workshop de domótica con Node.js, Raspberry Pi y Arduino",
+  "version": "1.0.0",
+  "author": "Mariano Campo <mcampo85@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "johnny-five": "^0.9.18"
+  }
+}
