@@ -13,7 +13,7 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 1. [Johnny-five hello world](ejercicios/01_hello-world)
 1. [Sensor de temperatura](ejercicios/02_sensor-temperatura)
 1. [Switch magnético](ejercicios/03_switch-magnetico)
-1. Conexión bluetooth con el módulo HC-06
+1. [Conexión bluetooth con el módulo HC-06](ejercicios/04_conexion-hc-06)
 1. Node en Raspberry Pi
 1. Conexión bluetooth entre Raspberry Pi y HC-06
 1. Hub de dispositivos
