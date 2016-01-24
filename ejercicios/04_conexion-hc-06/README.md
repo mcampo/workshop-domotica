@@ -23,7 +23,7 @@ Scanning ...
 Y asociar la dirección MAC al device ``/dev/rfcomm0``
 ```bash
 $ sudo rfcomm bind rfcomm0 30:14:11:21:00:90 1
-$ ll /dev/rfcomm0
+$ ls -l /dev/rfcomm0
 crw-rw---- 1 root dialout 216, 0 ene 17 21:13 /dev/rfcomm0
 ```
 
