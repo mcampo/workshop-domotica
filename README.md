@@ -16,5 +16,5 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 1. [Conexión bluetooth con el módulo HC-06](ejercicios/04_conexion-hc-06)
 1. [Node en Raspberry Pi](ejercicios/05_node-raspberrypi)
 1. [Conexión bluetooth entre Raspberry Pi y HC-06](ejercicios/06_raspberrypi-bluetooth)
-1. Hub de dispositivos
+1. [Hub de dispositivos](ejercicios/07_hub)
 1. Control desde la web
