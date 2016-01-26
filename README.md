@@ -1,5 +1,12 @@
 # Workshop de domótica con Node.js, Raspberry Pi y Arduino
 
+En este workshop vamos a construir las bases para una solución de domótica hecha por nosotros mismos.
+
+Vamos a construir un hub central utilizando un Raspberry Pi para controlar con Node.js dispositivos basados en Arduino de forma inalámbrica. También vamos a implementar una interfaz web simple para monitorear y comunicarse con el hub de forma remota.
+
+El objetivo principal es plantear la arquitectura y hacer una implementación simple.
+Con esta base cada uno podrá después en sus casas implementar los sensores y actuadores que necesiten, como también mejorar el hub y la interfaz web para agregarles más funcionalidad.
+
 ## Prerequisitos
 
 Antes de empezar el taller necesitás tener instalado en tu computadora:
