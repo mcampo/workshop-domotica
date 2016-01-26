@@ -13,7 +13,7 @@ Podemos ver un ejemplo (ya incluído en la lista de dispositivos que maneja el h
 
 Vemos también que el hub no hace mucho más que inicializar los dispositivos y escuchar los eventos que emiten (por ahora sólo los loguea en la consola, en el próximo ejercicio los enviará a una interfaz web).
 
-Si corremos el hub (poemos hacerlo en nuestra computadora en este momento) deberíamos ver lo siguiente:
+Si corremos el hub (podemos hacerlo en nuestra computadora en este momento) deberíamos ver lo siguiente:
 
 ```bash
 $ node hub.js

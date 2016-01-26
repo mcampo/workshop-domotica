@@ -1,6 +1,6 @@
 # Node en Raspberry Pi
 
-## Conectarse por  SSH
+## Conectarse por SSH
 
 ```bash
 $ ssh pi@xxx.xxx.xxx.xxx

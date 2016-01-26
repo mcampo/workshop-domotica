@@ -13,7 +13,7 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 
 * **Node.js**: Podés descargarlo y seguir las instrucciones desde https://nodejs.org/en/download/, o usar el [package manager](https://nodejs.org/en/download/package-manager/) de tu plataforma.
 
-#### Ubutu / Debian
+#### Ubuntu / Debian
 * Build essentials: ``sudo apt-get install build-essential``
 
 #### Windows
