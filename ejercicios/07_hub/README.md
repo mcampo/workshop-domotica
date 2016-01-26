@@ -92,4 +92,4 @@ Device [Thermometer] emitted event [temperature] { temperature: 27.34375 }
 Device [Thermometer] emitted event [temperature] { temperature: 27.34375 }
 ```
 
-**Nota:** para copiar de forma rápida el contenido del taller al Raspberry Pi podemos hacer ``scp -r ./ pi@192.168.1.xxx:/home/pi/workshop-domotica``
+**Nota:** para copiar de forma rápida el contenido del taller al Raspberry Pi podemos hacer ``scp -r ./ pi@192.168.1.xxx:/home/pi/workshop-domotica`` (estando ubicados en el raiz del repositorio)

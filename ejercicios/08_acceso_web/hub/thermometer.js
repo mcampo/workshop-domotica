@@ -1,9 +1,9 @@
 var five = require('johnny-five');
 var EventEmitter = require('events').EventEmitter;
 
-var device = null; // <-- crear una instancia
-device.name = null; // <-- darle un nombre
-device.events = null; // <-- indicar los eventos que vá a emitir
+var device = new EventEmitter();
+device.name = 'Thermometer';
+device.events = ['temperature'];
 
 device.init = function() {
   var board = new five.Board({
@@ -19,11 +19,11 @@ device.init = function() {
     });
 
     thermometer.on('data', function () {
-      // ↓ emitir un evento 'temperature' con la medición de la temperatura
+      var data = { temperature: this.celsius };
+      device.emit('temperature', data);
     });
 
-    // ↓ emitir el evento 'ready'
-
+    device.emit('ready');
   });
 };
 
