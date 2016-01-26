@@ -28,7 +28,7 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 
 ## Ejercicios
 
-**Nota** En el taller vamos a usar placas Arduino Uno [ya preparadas](firmata.md) para usar Johnny-five.
+**Nota** En el taller vamos a usar placas Arduino Uno [ya preparadas](firmata.md) para usar Johnny-five, y Raspberry Pis 2 con Raspbian [ya instalado](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 
 1. [Johnny-five hello world](ejercicios/01_hello-world)
 1. [Sensor de temperatura](ejercicios/02_sensor-temperatura)
