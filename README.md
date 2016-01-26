@@ -38,3 +38,4 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 1. [Conexión bluetooth entre Raspberry Pi y HC-06](ejercicios/06_raspberrypi-bluetooth)
 1. [Hub de dispositivos](ejercicios/07_hub)
 1. [Acceso desde la web](ejercicios/08_acceso_web)
+1. [Agregar lógica a la web](ejercicios/09_logica_web)
