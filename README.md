@@ -13,6 +13,18 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 
 * **Node.js**: Podés descargarlo y seguir las instrucciones desde https://nodejs.org/en/download/, o usar el [package manager](https://nodejs.org/en/download/package-manager/) de tu plataforma.
 
+#### Ubutu / Debian
+* Build essentials: ``sudo apt-get install build-essential``
+
+#### Windows
+* VS Express [Download](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
+* Python 2.7 [Download](https://www.python.org/downloads/release/python-2711/)
+* ``node-gyp``: ``npm install -g node-gyp``
+
+#### OSX
+* XCode [Download](https://developer.apple.com/xcode/download/)
+* ``node-gyp``: ``npm install -g node-gyp``
+
 ## Ejercicios
 
 **Nota** En el taller vamos a usar placas Arduino Uno [ya preparadas](firmata.md) para usar Johnny-five.
