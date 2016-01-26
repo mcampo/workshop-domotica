@@ -20,6 +20,7 @@ Antes de empezar el taller necesitás tener instalado en tu computadora:
 * VS Express [Download](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
 * Python 2.7 [Download](https://www.python.org/downloads/release/python-2711/)
 * ``node-gyp``: ``npm install -g node-gyp``
+* PuTTY y PSCP [Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 #### OSX
 * XCode [Download](https://developer.apple.com/xcode/download/)
