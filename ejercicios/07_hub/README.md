@@ -36,22 +36,22 @@ Vamos a reimplementar el sensor de temperatura del [ejercicio 2](../02_sensor-te
 
 Implemetar los 4 requisitos que tiene que tener un dispositivo:
 
-1. Ser un EventEmitter
+1) Ser un EventEmitter
 ```js
 var device = new EventEmitter();
 ```
 
-2. Tener una propiedad ``name``
+2) Tener una propiedad ``name``
 ```js
 device.name = 'Thermometer';
 ```
 
-3. Tener una propiedad ``events`` con los eventos que emite
+3) Tener una propiedad ``events`` con los eventos que emite
 ```js
 device.events = ['temperature'];
 ```
 
-4. Tener un método ``init`` y emitir el evento ``ready`` una vez que esté inicializado
+4) Tener un método ``init`` y emitir el evento ``ready`` una vez que esté inicializado
 ```js
 device.init = function () {
   ...
@@ -60,7 +60,7 @@ device.init = function () {
 }
 ```
 
-5. Emitir un evento ``temperature`` con la medición de la temperatura (si bien este no es un requisito, el dispositivo no tendría mucho sentido sin esto)
+5) Emitir un evento ``temperature`` con la medición de la temperatura (si bien este no es un requisito, el dispositivo no tendría mucho sentido sin esto)
 ```js
 thermometer.on('data', function () {
   var data = { temperature: this.celsius };
