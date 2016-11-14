@@ -1,7 +1,9 @@
-var mockDevice = require('./mock-device.js');
+'use strict'
+const mockDevice = require('./mock-device.js');
 // ↓ requerir el módulo 'thermometer.js'
 
-var devices = [mockDevice]; // <-- agregar el dispositivo 'thermometer' a la lista de dispositivos
+
+const devices = [mockDevice]; // <-- agregar el dispositivo 'thermometer' a la lista de dispositivos
 devices.forEach(device => {
   device.on('ready', () => deviceReady(device));
   device.init();

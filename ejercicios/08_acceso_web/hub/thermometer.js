@@ -1,25 +1,26 @@
-var five = require('johnny-five');
-var EventEmitter = require('events').EventEmitter;
+'use strict'
+const five = require('johnny-five');
+const EventEmitter = require('events').EventEmitter;
 
-var device = new EventEmitter();
+const device = new EventEmitter();
 device.name = 'Thermometer';
 device.events = ['temperature'];
 
-device.init = function() {
-  var board = new five.Board({
+device.init = () => {
+  let board = new five.Board({
     port: '/dev/rfcomm0',
     repl: false
   });
 
-  board.on('ready', function () {
-    var thermometer = new five.Thermometer({
+  board.on('ready', () => {
+    let thermometer = new five.Thermometer({
       controller: 'LM35',
       pin: 'A0',
       freq: 2000
     });
 
-    thermometer.on('data', function () {
-      var data = { temperature: this.celsius };
+    thermometer.on('data', () => {
+      let data = { temperature: thermometer.celsius };
       device.emit('temperature', data);
     });
 

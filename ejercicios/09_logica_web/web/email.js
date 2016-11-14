@@ -1,6 +1,7 @@
-var nodemailer = require('nodemailer');
+'use strict'
+const nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   host: 'smtp.domain.com',
   port: 587,
   secure: false,

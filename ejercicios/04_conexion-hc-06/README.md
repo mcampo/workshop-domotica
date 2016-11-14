@@ -48,7 +48,7 @@ Ver [Component initialization](http://johnny-five.io/api/board/#component-initia
 
 Inicializar el componente ``Board`` pasando como parámetro el puerto que acabamos de crear:
 ```js
-var board = new five.Board({
+let board = new five.Board({
   port: '/dev/rfcomm0' // <-- Linux
 	// port: 'COM*' // <-- Windows
 	// port: /dev/tty.NODEBOT-XX-DevB // <-- OSX
@@ -57,7 +57,7 @@ var board = new five.Board({
 
 Y dentro del evento ``ready`` de board:
 ```js
-var led = five.Led(13);
+let led = five.Led(13);
 led.blink(1000);
 ```
 

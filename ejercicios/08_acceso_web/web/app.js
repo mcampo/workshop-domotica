@@ -1,7 +1,8 @@
-var http = require('http');
-var path = require('path');
-var express = require('express');
-var ioServer = require('socket.io');
+'use strict'
+const http = require('http');
+const path = require('path');
+const express = require('express');
+const ioServer = require('socket.io');
 
 var app = express();
 var server = http.createServer(app);
@@ -13,6 +14,7 @@ var hubs = null; // <-- crear namespace para los hubs
 var frontends = null; // <-- crear namespace para los frontends
 
 // ↓ Escuchar nuevas conexiones de hubs, y por cada hub escuchar los eventos que nos interesan
+
 
 server.listen(3000, function () {
   console.log('Web ready');

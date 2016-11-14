@@ -1,9 +1,10 @@
-var thermometer = require('./thermometer.js');
-var ioClient = require('socket.io-client');
+'use strict'
+const thermometer = require('./thermometer.js');
+const ioClient = require('socket.io-client');
 
-var io = null; // <-- hacer conexión con la aplicación web a través de socket.io
+const io = null; // <-- hacer conexión con la aplicación web a través de socket.io
 
-var devices = [thermometer];
+const devices = [thermometer];
 devices.forEach(device => {
   device.on('ready', () => deviceReady(device));
   device.init();

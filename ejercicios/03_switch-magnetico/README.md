@@ -8,17 +8,17 @@
 Ver componente [Switch](http://johnny-five.io/api/switch/)
 
 ```js
-var reed = five.Switch(8);
+let reed = five.Switch(8);
 
-reed.on('close', function () {
+reed.on('close', () => {
   console.log('Switch cerrado');
 });
 
-reed.on('open', function () {
+reed.on('open', () => {
   console.log('Switch abierto');
 });
 
-console.log('Estado inicial: ' + (reed.isClosed ? 'cerrado' : 'abierto'));
+console.log(`Estado inicial: ${reed.isClosed ? 'cerrado' : 'abierto'}`);
 ```
 
 ## Ejecutar

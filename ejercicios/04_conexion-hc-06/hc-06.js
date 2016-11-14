@@ -1,8 +1,9 @@
-var five = require('johnny-five');
+'use strict'
+const five = require('johnny-five');
 
-var board = null; // <-- inicializar Board especificando el puerto
+let board = null; // <-- inicializar Board especificando el puerto
 
-board.on('ready', function () {
+board.on('ready', () => {
   // ↓ hacer parpadear el led
-  
+
 });

@@ -10,11 +10,11 @@ Ver componentes
 * [Led](http://johnny-five.io/api/led/)
 
 ```js
-var five = require('johnny-five');
-var board = five.Board();
+const five = require('johnny-five');
+const board = five.Board();
 
-board.on('ready', function () {
-    var led = five.Led(8);
+board.on('ready', () => {
+    let led = five.Led(8);
     led.blink(1000);
 });
 ```

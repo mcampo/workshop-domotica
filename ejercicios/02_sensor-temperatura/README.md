@@ -10,14 +10,14 @@
 Ver componente [Thermometer](http://johnny-five.io/api/thermometer/)
 
 ```js
-var thermometer = new five.Thermometer({
+let thermometer = new five.Thermometer({
   controller: 'LM35',
   pin: 'A0',
   freq: 1000
 });
 
-thermometer.on('data', function () {
-  console.log(`Temperatura: ${this.celsius}°C`);
+thermometer.on('data', () => {
+  console.log(`Temperatura: ${thermometer.celsius}°C`);
 });
 ```
 

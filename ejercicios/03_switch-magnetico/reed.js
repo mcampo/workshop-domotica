@@ -1,9 +1,10 @@
-var five = require('johnny-five');
-var board = new five.Board();
+'use strict'
+const five = require('johnny-five');
+const board = new five.Board();
 
-board.on('ready', function () {
+board.on('ready', () => {
   // ↓ Crear instancia de Switch
 
   // ↓ loguear por consola los eventos 'open' y 'close'
-  
+
 });

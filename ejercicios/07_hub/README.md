@@ -38,7 +38,7 @@ Implemetar los 4 requisitos que tiene que tener un dispositivo:
 
 1) Ser un EventEmitter
 ```js
-var device = new EventEmitter();
+let device = new EventEmitter();
 ```
 
 2) Tener una propiedad ``name``
@@ -53,7 +53,7 @@ device.events = ['temperature'];
 
 4) Tener un método ``init`` y emitir el evento ``ready`` una vez que esté inicializado
 ```js
-device.init = function () {
+device.init = () => {
   ...
   device.emit('ready');
   ...
@@ -62,17 +62,17 @@ device.init = function () {
 
 5) Emitir un evento ``temperature`` con la medición de la temperatura (si bien este no es un requisito, el dispositivo no tendría mucho sentido sin esto)
 ```js
-thermometer.on('data', function () {
-  var data = { temperature: this.celsius };
+thermometer.on('data', () => {
+  let data = { temperature: thermometer.celsius };
   device.emit('temperature', data);
 });
 ```
 
 Luego agregamos este dispositivo al hub
 ```js
-var thermometer = require('./thermometer.js');
+const thermometer = require('./thermometer.js');
 
-var devices = [mockDevice, thermometer];
+const devices = [mockDevice, thermometer];
 ```
 
 ### Ejecutar

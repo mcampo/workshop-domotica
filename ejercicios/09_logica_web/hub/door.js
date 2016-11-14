@@ -1,20 +1,21 @@
-var five = require('johnny-five');
-var EventEmitter = require('events').EventEmitter;
+'use strict'
+const five = require('johnny-five');
+const EventEmitter = require('events').EventEmitter;
 
-var device = new EventEmitter();
+const device = new EventEmitter();
 device.name = 'Door';
 device.events = ['door-open'];
 
-device.init = function() {
-  var board = new five.Board({
+device.init = () => {
+  let board = new five.Board({
     port: '/dev/rfcomm0',
     repl: false
   });
 
-  board.on('ready', function () {
-    var reed = five.Switch(8);
+  board.on('ready', () => {
+    let reed = five.Switch(8);
 
-    reed.on('open', function () {
+    reed.on('open', () => {
       device.emit('door-open', { timestamp: Date.now() });
     });
 

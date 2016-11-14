@@ -1,9 +1,10 @@
-var door = require('./door.js');
-var ioClient = require('socket.io-client');
+'use strict'
+const door = require('./door.js');
+const ioClient = require('socket.io-client');
 
-var io = ioClient('http://your-ip:3000/hub'); // <-- reemplazar por tu ip
+const io = null; // <-- reemplazar por tu ip
 
-var devices = [door];
+const devices = [door];
 devices.forEach(device => {
   device.on('ready', () => deviceReady(device));
   device.init();
