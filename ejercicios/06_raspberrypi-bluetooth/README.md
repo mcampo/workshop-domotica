@@ -1,18 +1,5 @@
 # Conexión bluetooth entre Raspberry Pi y HC-06
 
-## Conectar dongle bluetooth
-
-Conectar el dongle bluetooth a alguno de los puertos USB del Raspberry Pi y verificar que el dispositivo fué reconocido:
-```bash
-$ lsusb
-Bus 001 Device 004: ID 0a12:0001 Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)
-Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
-Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp.
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-```
-
-Nuestro dispositivo es ``Bus 001 Device 004: ID 0a12:0001 Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)``, si se vé esa línea significa que el dispositivo fué reconocido correctamente.
-
 ## Conexión con el módulo HC-06
 
 ### Instalar dependencias

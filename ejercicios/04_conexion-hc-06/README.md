@@ -1,6 +1,6 @@
 # Conexión bluetooth con el módulo HC-06
 
-En el taller vamos a usar módulos ya preparados para trabajar con johnny-five. Si querés configurar tu propio módulo podés seguir estas instrucciones: [Preparación del módulo HC-06](../../hc-06/preparacion.md)
+En el taller vamos a usar módulos ya preparados para trabajar con johnny-five. Si querés configurar tu propio módulo podés seguir estas instrucciones: [Preparación del módulo HC-06](../../hc-06)
 
 
 ## Diagrama
